@@ -1,0 +1,13 @@
+1. What findings were detected related to the brute force attack?
+    - Policy:S3/BucketAnonymousAccessGranted (High security)
+    - Policy:S3/BucketBlockPublicAccessDisabled (Low security)
+2. Research the AWS Guard Duty documentation page and explain how GuardDuty may have detected this attack - i.e. what was its source of information?
+    - The Amazon S3 bucket cand-c3-free-recipes-020362129970 was granted public anonymous access by voclabs calling PutBucketPolicy. 
+    If this behavior is not expected, it may indicate a configuration mistake or that your credentials are compromised.
+
+    https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-s3.html?icmpid=docs_gd_help_panel#policy-s3-bucketanonymousaccessgranted
+
+    - Amazon S3 Block Public Access was disabled for the S3 bucket cand-c3-free-recipes-020362129970 by voclabs calling PutBucketPublicAccessBlock. 
+    If this behavior is not expected, it may indicate a configuration mistake or that your credentials are compromised.
+    https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-s3.html?icmpid=docs_gd_help_panel#policy-s3-bucketblockpublicaccessdisabled
+

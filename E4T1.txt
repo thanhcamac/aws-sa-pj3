@@ -1,0 +1,7 @@
+1.
+    - Implement NACLS rules: This pervents unauthorized users from attempting brute force attacks on SSH.
+    - Enable AWS Shield to provide protection against large-scale DDos attacks.
+2. 
+    - Implement IAM policies: Ensure that only authorized users have permissinion to access.
+    - Enable S3 Bucket Policies: configure the bucket policy to deny access all users except for specific IAM users
+    that need access to the secret recipes.

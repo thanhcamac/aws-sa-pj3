@@ -1,0 +1,6 @@
+Terraform
+    - Example: This might expose a violation where an S3 bucket is created without encryption enabled. 
+violation of a compliance requirement that mandates encryption for sensitive data storage.a
+
+Trivy
+    - Exmple: This might dectect a critical vulnerability in the OpenSSL package used within a container image. 

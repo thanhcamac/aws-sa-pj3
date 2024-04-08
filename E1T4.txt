@@ -1,0 +1,7 @@
+# Poor practice 1
+    A public route table with a CIDR block of 0.0.0.0/0 may forward all traffic, including potentially unwanted traffic.
+    Thus posing significant security risks.This can open up the possibility for unauthorized access and data breaches.
+# Poor practice 2
+    S3 buckets have open permissions, allowing any EC2 instance within the same VPC to acess them.
+    This poses a security risk, as it may lead to unauthorized access to sensitive data.
+    

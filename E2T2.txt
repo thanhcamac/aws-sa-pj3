@@ -1,0 +1,14 @@
+1. Security groups should not allow unrestricted access to ports with high risk
+    - Configure specific routes in route table to allow traffic only from trusted source as API Gateway
+2. Hardware MFA should be enabled for the root user
+    - Enable MFA for the root user.
+3. Security groups should only allow unrestricted incoming traffic for authorized ports
+    - Modify security group rules t retrict incoming traffic to authorized ports only.
+4. VPC default security groups should not allow inbound or outbound traffic
+    - Modify default security group settings to retrict both inbound and outbound traffic, allowing only necessary communication.
+5. EC2 instances should use Instance Metadata Service Version 2 (IMDSv2)
+    - Enable IMDSv2 on EC2 instances to enhance security and project against certain types of attacks.
+6. EC2 instances should not have a public IPv4 address
+    - Enable that EC2 instances are launched without public IPv4 addresses.
+7. CloudTrail should be enabled and configured with at least one multi-Region trail that includes read and write management events
+    - Set up CloudTrail with a multi-Region trail to log all API activity, including read and write management events.
